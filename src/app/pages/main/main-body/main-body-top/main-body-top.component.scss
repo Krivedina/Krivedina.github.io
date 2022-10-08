@@ -1,0 +1,38 @@
+.body-top {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, #15181E, #15181E), #2F3441;
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 478px;
+        color: #fff;
+        align-items: baseline;
+        margin-top: 93px;
+    }
+    &-title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 62px;
+    }
+    &-description {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &-button {
+        padding: 10px 32px;
+        background: linear-gradient(90deg, #0D70F2 0%, #009FDF 100%), #0D69F2;
+        border-radius: 8px;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
+    &-image {
+        width: 643px;
+        height: 658px;
+    }
+}
