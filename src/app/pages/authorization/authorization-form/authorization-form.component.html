@@ -1,0 +1,14 @@
+<section class="authorization">
+    <h3 class="authorization-title">Вход в личный кабинет</h3>
+    <form class="authorization-form" action="">
+        <input class="authorization-form-control" formControlName="email" type="text" placeholder="Email" />
+        <div class="authorization-form-control-password">
+            <input class="authorization-form-control" formControlName="password" type="password" placeholder="Пароль" />
+            <a href="#" class="authorization-form-forget">Не помню пароль</a>
+        </div>
+        <button (click)="sendAuthorizationData()" class="authorization-form-entry">
+      Войти
+    </button>
+    </form>
+    <button class="authorization-registration">Регистрация</button>
+</section>

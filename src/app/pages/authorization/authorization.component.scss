@@ -1,0 +1,17 @@
+.authorization {
+    background: #F3F7FA;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    &-logo {
+        width: 153px;
+        height: 24px;
+        margin: auto;
+        display: block;
+    }
+    &-content {
+        height: calc(100vh - (56px + 24px));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
