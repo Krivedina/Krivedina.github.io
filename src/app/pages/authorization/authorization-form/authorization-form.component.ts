@@ -9,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class AuthorizationFormComponent implements OnInit {
 
-  registrationForm = new FormGroup({
+  authorizationForm = new FormGroup({
     email: new FormControl('', [Validators.required,
     Validators.email]),
     password: new FormControl('', [Validators.required])
@@ -23,6 +23,6 @@ export class AuthorizationFormComponent implements OnInit {
 
 
   sendAuthorizationData() {
-    console.log(this.registrationForm);
+    console.log(this.authorizationForm);
   }
 }
