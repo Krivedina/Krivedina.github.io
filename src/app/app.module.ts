@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { IconModule } from './shared/icon';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     RouterModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

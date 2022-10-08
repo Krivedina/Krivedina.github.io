@@ -1,0 +1,14 @@
+@mixin iconSize($size) {
+	.size-#{$size} {
+		height: #{$size}px;
+		width: #{$size}px;
+	}
+}
+
+:host {
+	display: inherit;
+
+	@each $size in (12, 16, 18, 20, 24, 30, 36, 60, 64) {
+		@include iconSize($size);
+	}
+}

@@ -1,0 +1,30 @@
+.main-header {
+    background: linear-gradient(0deg, #15181E, #15181E), #2F3441;
+    padding: 28px 165px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    &-wrapper {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+    &-link {
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+    &-logo {
+        width: 153px;
+        height: 24px;
+    }
+    &-enter-btn {
+        border: 2px solid #0D69F2;
+        border-radius: 8px;
+        padding: 10px 24px;
+        background-color: transparent;
+        color: #0D69F2;
+        margin-left: auto;
+        cursor: pointer;
+    }
+}
