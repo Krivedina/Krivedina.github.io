@@ -12,8 +12,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    AuthorizationRoutingModule,
     RouterModule,
+    AuthorizationRoutingModule,
   ]
 })
 export class AuthorizationModule { }

@@ -1,0 +1,46 @@
+<div [class.content]="onPersonalPage">
+  <section class="registrationUser">
+    <h3 class="registrationUser-title">
+      Заполните свой профиль для запроса прав доступа
+    </h3>
+    <form
+      [formGroup]="registrationUserForm"
+      class="registrationUser-form"
+      action=""
+    >
+      <div class="registrationUser-avatar">
+        <img class="registrationUser-avatar-image" src="" alt="user-avatar" />
+        <label class="registrationUser-label" for="avatar">
+          Загрузить фото профиля
+          <input id="avatar" type="file" formControlName="avatar" />
+        </label>
+      </div>
+
+      <input
+        class="registrationUser-form-control"
+        formControlName="surname"
+        type="text"
+        placeholder="Фамилия"
+      />
+      <input
+        class="registrationUser-form-control"
+        formControlName="firstName"
+        type="text"
+        placeholder="Имя"
+      />
+      <input
+        class="registrationUser-form-control"
+        formControlName="jobTitle"
+        type="text"
+        placeholder="Должность"
+      />
+
+      <button
+        (click)="sendAuthorizationData()"
+        class="registrationUser-form-entry"
+      >
+        Запросить права доступа
+      </button>
+    </form>
+  </section>
+</div>

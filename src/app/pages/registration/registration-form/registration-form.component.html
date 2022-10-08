@@ -1,9 +1,11 @@
-<article class="registration">
-    <h3 class="registration-title">Регистрация в веб-портале</h3>
-    <form [formGroup]="registrationForm" class="registration-form">
-        <input formControlName="email" class="registration-control" type="text" placeholder="Email" />
-        <input formControlName="password" class="registration-control" type="password" placeholder="Пароль" />
-        <button (click)="sendRegistrationData()" class="registration-button">Зарегистрироваться</button>
-    </form>
-    <span class="registration-option">У меня уже есть аккаунт, войти</span>
-</article>
+<div [class.content]="onPersonalPage">
+    <article class="registration">
+        <h3 class="registration-title">Регистрация в веб-портале</h3>
+        <form [formGroup]="registrationForm" class="registration-form">
+            <input formControlName="email" class="registration-control" type="text" placeholder="Email" />
+            <input formControlName="password" class="registration-control" type="password" placeholder="Пароль" />
+            <button (click)="sendRegistrationData()" class="registration-button">Зарегистрироваться</button>
+        </form>
+        <span class="registration-option">У меня уже есть аккаунт, войти</span>
+    </article>
+</div>

@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'registration-form',
@@ -8,6 +9,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RegistrationFormComponent implements OnInit {
+  @Input()
+  onPersonalPage = true;
+
   registrationForm = new FormGroup({
     email: new FormControl('', [Validators.required,
     Validators.email]),
@@ -15,7 +19,7 @@ export class RegistrationFormComponent implements OnInit {
   }
   );
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,5 +27,6 @@ export class RegistrationFormComponent implements OnInit {
 
   sendRegistrationData() {
     console.log(this.registrationForm);
+    this.router.navigate(['registration/create-user']);
   }
 }
