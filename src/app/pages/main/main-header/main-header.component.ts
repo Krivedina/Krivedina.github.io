@@ -15,7 +15,7 @@ export class MainHeaderComponent implements OnInit {
 
   scroll(name: string) {
     const element = document.getElementById(name);
-    element?.scrollIntoView({behavior: 'smooth'});
+    element?.scrollIntoView({ behavior: 'smooth'});
 }
 
 }
