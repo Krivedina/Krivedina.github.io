@@ -1,0 +1,93 @@
+.body-bottom {
+    background-color: #15181E;
+    padding: 80px 165px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    &-description {}
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        margin: 0;
+        margin-bottom: 40px;
+        color: #FFFFFF;
+    }
+    &-content {
+        margin-bottom: 45px;
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0;
+            color: #009FDF
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+            color: #FFFFFF;
+        }
+    }
+    &-sub-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+    }
+    &-medal {
+        width: 75px;
+        height: 75px;
+        border: 2px solid #C4C1DD;
+        border-radius: 100px;
+        margin-left: -10px;
+    }
+}
+
+.registration {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    max-width: 445px;
+    &-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &-control {
+        padding: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &-button {
+        padding: 24px 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #0D70F2 0%, #009FDF 100%), #0D69F2;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &-option {
+        margin-top: 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #0D69F2;
+        display: flex;
+        justify-content: center;
+    }
+}
