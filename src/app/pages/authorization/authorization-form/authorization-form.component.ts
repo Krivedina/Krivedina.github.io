@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'authorization-form',
@@ -16,7 +17,7 @@ export class AuthorizationFormComponent implements OnInit {
   }
   );
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -24,5 +25,6 @@ export class AuthorizationFormComponent implements OnInit {
 
   sendAuthorizationData() {
     console.log(this.authorizationForm);
+    this.router.navigate(['/user']);
   }
 }
