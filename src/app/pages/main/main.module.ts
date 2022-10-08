@@ -12,6 +12,7 @@ import { MainBodyBottomComponent } from './main-body/main-body-bottom/main-body-
 import { BodyMiddleScaleComponent } from './main-body/main-body-middle/body-middle-scale/body-middle-scale.component';
 import { BodyMiddlePromoComponent } from './main-body/main-body-middle/body-middle-promo/body-middle-promo.component';
 import { BodyMiddleActivityComponent } from './main-body/main-body-middle/body-middle-activity/body-middle-activity.component';
+import { RegistrationModule } from '../registration/registration.module';
 
 const components = [
   MainComponent,
@@ -32,7 +33,8 @@ const components = [
   imports: [
     CommonModule,
     MainRoutingModule,
-    RouterModule
+    RouterModule,
+    RegistrationModule
   ]
 })
 export class MainModule { }
