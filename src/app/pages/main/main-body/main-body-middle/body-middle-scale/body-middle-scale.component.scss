@@ -1,8 +1,7 @@
 .middle-scale {
-    display: flex;
-    align-items: center;
+    display: grid;
     justify-content: center;
-    flex-direction: column;
+    justify-items: stretch;
     margin-top: 45px;
     margin-bottom: 100px;
     &-content {
@@ -10,7 +9,6 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        margin-left: -115px;
         &-number {
             color: #009FDF;
             border: 1px solid #009FDF;
