@@ -1,0 +1,45 @@
+.middle-scale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: -115px;
+        &-number {
+            color: #009FDF;
+            border: 1px solid #009FDF;
+            border-radius: 100px;
+            padding: 10px;
+            background-size: 80px 80px;
+            background-image: url(./../../../../../../assets/icons/scale-bg.svg);
+        }
+        &-line {
+            border-bottom: 1px solid #009FDF;
+            width: 304px;
+            height: 1px;
+        }
+    }
+    &-description {
+        display: flex;
+        margin-top: 15px;
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        width: 368px;
+        display: flex;
+        justify-content: flex-end;
+        p {
+            max-width: 253px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

@@ -9,6 +9,9 @@ import { RouterModule } from '@angular/router';
 import { MainBodyTopComponent } from './main-body/main-body-top/main-body-top.component';
 import { MainBodyMiddleComponent } from './main-body/main-body-middle/main-body-middle.component';
 import { MainBodyBottomComponent } from './main-body/main-body-bottom/main-body-bottom.component';
+import { BodyMiddleScaleComponent } from './main-body/main-body-middle/body-middle-scale/body-middle-scale.component';
+import { BodyMiddlePromoComponent } from './main-body/main-body-middle/body-middle-promo/body-middle-promo.component';
+import { BodyMiddleActivityComponent } from './main-body/main-body-middle/body-middle-activity/body-middle-activity.component';
 
 const components = [
   MainComponent,
@@ -17,7 +20,10 @@ const components = [
   MainFooterComponent,
   MainBodyTopComponent,
   MainBodyMiddleComponent,
-  MainBodyBottomComponent
+  MainBodyBottomComponent,
+  BodyMiddleScaleComponent,
+  BodyMiddlePromoComponent,
+  BodyMiddleActivityComponent
 ];
 
 @NgModule({
