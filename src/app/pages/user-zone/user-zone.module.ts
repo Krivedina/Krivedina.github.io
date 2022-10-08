@@ -4,6 +4,7 @@ import { UserZoneRoutingModule } from './user-zone-routing.module';
 import { UserZoneHeaderComponent } from './user-zone-header/user-zone-header.component';
 import { UserZoneComponent } from './user-zone.component';
 import { ProfileModule } from '../profile/profile.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,7 +13,8 @@ import { ProfileModule } from '../profile/profile.module';
   imports: [
     CommonModule,
     UserZoneRoutingModule,
-    ProfileModule
+    ProfileModule,
+    RouterModule,
   ]
 })
 export class UserZoneModule { }

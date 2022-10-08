@@ -8,10 +8,15 @@ const routes: Routes = [
     path: '',
     component: UserZoneComponent,
     children: [
-      // {
-      //   path: 'profile',
-      //   component:
-      // }
+      {
+        path:'',
+        redirectTo: 'profile',
+        pathMatch: 'full'
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./../profile/profile.module').then(m => m.ProfileModule)
+      }
     ]
   }
 
