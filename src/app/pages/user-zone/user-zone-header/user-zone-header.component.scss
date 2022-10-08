@@ -22,6 +22,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #A0A5B3;
+                cursor: pointer;
             }
         }
     }
@@ -33,5 +34,8 @@
         margin-right: 30px;
         &-logo {}
         &-value {}
+    }
+    &-profileWrapper {
+        cursor: pointer;
     }
 }
