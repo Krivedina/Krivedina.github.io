@@ -13,4 +13,9 @@ export class MainHeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(name: string) {
+    const element = document.getElementById(name);
+    element?.scrollIntoView({behavior: 'smooth'});
+}
+
 }

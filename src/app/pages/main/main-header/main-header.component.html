@@ -1,9 +1,9 @@
 <section class="main-header">
     <article class="main-header-wrapper">
-        <img class="main-header-logo" src="assets/icons/main-header-logo.svg" />
-        <a class="main-header-link" href="#part1">Начисление и списание NFT и DR</a>
-        <a class="main-header-link" href="#part2">Активности</a>
-        <a class="main-header-link" href="#part3">Участники</a>
+        <img class="main-header-logo" src="assets/icons/main-header-logo.svg" [routerLink]="['/main']" />
+        <button class="main-header-link" (click)="scroll('part1')">Начисление и списание NFT и DR</button>
+        <button class="main-header-link" (click)="scroll('part2')">Активности</button>
+        <button class="main-header-link" (click)="scroll('part3')">Участники</button>
         <button [routerLink]="['/#']" class="main-header-enter-btn">Войти</button>
     </article>
 </section>
