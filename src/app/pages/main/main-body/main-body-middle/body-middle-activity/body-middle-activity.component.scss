@@ -1,6 +1,7 @@
 .middle-activity {
     display: grid;
     justify-content: center;
+    justify-items: stretch;
     margin-bottom: 104px;
     &-title {
         font-weight: 600;
@@ -12,7 +13,6 @@
     &-description {
         display: flex;
         gap: 30px;
-        justify-content: center;
         align-items: center;
     }
     &-info {

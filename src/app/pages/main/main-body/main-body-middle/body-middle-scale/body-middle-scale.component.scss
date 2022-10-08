@@ -7,7 +7,6 @@
     &-content {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 10px;
         &-number {
             color: #009FDF;
@@ -33,7 +32,6 @@
         line-height: 24px;
         width: 368px;
         display: flex;
-        justify-content: flex-end;
         p {
             max-width: 253px;
             margin: 0;
