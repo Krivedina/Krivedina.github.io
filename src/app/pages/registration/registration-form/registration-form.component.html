@@ -4,8 +4,9 @@
         <form [formGroup]="registrationForm" class="registration-form">
             <input formControlName="email" class="registration-control" type="text" placeholder="Email" />
             <input formControlName="password" class="registration-control" type="password" placeholder="Пароль" />
+            <input formControlName="password" class="registration-control" type="passwordAgain" placeholder="Повторите пароль" />
             <button (click)="sendRegistrationData()" class="registration-button">Зарегистрироваться</button>
         </form>
-        <span class="registration-option">У меня уже есть аккаунт, войти</span>
+        <span class="registration-option" [routerLink]="['/login']">У меня уже есть аккаунт, войти</span>
     </article>
 </div>

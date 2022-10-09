@@ -15,7 +15,8 @@ export class RegistrationFormComponent implements OnInit {
   registrationForm = new FormGroup({
     email: new FormControl('', [Validators.required,
     Validators.email]),
-    password: new FormControl('', [Validators.required])
+    password: new FormControl('', [Validators.required]),
+    passwordAgain: new FormControl('', [Validators.required])
   }
   );
 
@@ -23,7 +24,6 @@ export class RegistrationFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 
   sendRegistrationData() {
     console.log(this.registrationForm);

@@ -28,6 +28,6 @@ export class RegistrationUserComponent implements OnInit {
 
   sendAuthorizationData() {
     console.log(this.registrationUserForm);
-    this.router.navigate(['registration/create-user']);
+    this.router.navigate(['user/profile']);
   }
 }

@@ -4,13 +4,15 @@ import { ProfileWindowComponent } from './profile-window/profile-window.componen
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { ProfileComponent } from './profile.component';
 import { ProfileRoutingModule } from './profile-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [ProfileWindowComponent, ProfileCardComponent, ProfileComponent],
   exports: [ProfileWindowComponent, ProfileCardComponent],
   imports: [
     CommonModule,
-    ProfileRoutingModule
+    ProfileRoutingModule,
+    RouterModule,
   ]
 })
 export class ProfileModule { }
