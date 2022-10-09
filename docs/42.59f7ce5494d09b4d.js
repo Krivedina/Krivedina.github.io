@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvtb_sreda=self.webpackChunkvtb_sreda||[]).push([[42],{7042:(v,u,t)=>{t.r(u),t.d(u,{ActivityModule:()=>E});var _=t(6895),a=t(7080),l=t(6773),n=t(8256);let E=(()=>{class o{}return o.\u0275fac=function(d){return new(d||o)},o.\u0275mod=n.oAB({type:o}),o.\u0275inj=n.cJS({imports:[_.ez,a.B,l.Bz]}),o})()}}]);
