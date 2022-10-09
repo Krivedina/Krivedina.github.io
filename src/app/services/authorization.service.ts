@@ -24,8 +24,8 @@ export class AuthorizationService {
       'Content-Type': 'application/json',
     });
     return this.httpClient.post(`${BASE_URL}/login`, {
-      "username": "mister@gmail.com",
-      "password": "123456"
+      "username": "admin@gmail.com",
+      "password": "admin"
     },
       { headers: headers });
   }

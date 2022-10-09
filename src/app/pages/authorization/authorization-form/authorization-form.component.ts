@@ -12,16 +12,16 @@ import { AuthorizationService } from 'src/app/services/authorization.service';
 export class AuthorizationFormComponent implements OnInit {
 
   authorizationForm = new FormGroup({
-    email: new FormControl('', [Validators.required,
+    email: new FormControl('admin@gmail.com', [Validators.required,
     Validators.email]),
-    password: new FormControl('', [Validators.required])
+    password: new FormControl('admin', [Validators.required])
   }
   );
 
   constructor(private router: Router, private authorizationService: AuthorizationService) { }
 
   ngOnInit(): void {
-    this.authorizationService.postLogin().subscribe(console.log);
+    // this.authorizationService.postLogin().subscribe(console.log);
   }
 
 

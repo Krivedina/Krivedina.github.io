@@ -13,9 +13,16 @@ const routes: Routes = [
         path: 'course-list',
         loadChildren: () => import('./../course/course.module').then(m => m.CourseModule)
       },
+      {
+        path: 'marketplace',
+        loadChildren: () => import('./../marketplace/marketplace.module').then(m => m.MarketplaceModule)
+      },
+      {
+        path: 'community',
+        loadChildren: () => import('./../community/community.module').then(m => m.CommunityModule)
+      },
     ]
   }
-
 ];
 
 @NgModule({
