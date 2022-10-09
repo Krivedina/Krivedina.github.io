@@ -7,13 +7,16 @@ import { RouterModule } from '@angular/router';
 import { CourseDescriptionComponent } from './course-description/course-description.component';
 import { CoursePathComponent } from './course-path/course-path.component';
 import { CourseRoutingModule } from './course-routing.module';
+import { CourseStepComponent } from './course-step/course-step.component';
+import { ActivityRoutingModule } from '../activity/activity-routing.module';
 
 const components = [
   CourseCardComponent,
   CoursePageComponent,
   CourseComponent,
   CourseDescriptionComponent,
-  CoursePathComponent
+  CoursePathComponent,
+  CourseStepComponent
 ];
 
 @NgModule({

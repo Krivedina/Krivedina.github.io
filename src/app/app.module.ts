@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
+import { ActivityRoutingModule } from './pages/activity/activity-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http'
     RouterModule,
     CommonModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ActivityRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

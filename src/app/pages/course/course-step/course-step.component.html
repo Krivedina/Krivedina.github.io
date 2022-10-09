@@ -1,0 +1,20 @@
+<section *ngIf="slideType !== 'end'; else endCourse" class="step">
+    <div class="step-slide">
+        <span class="step-slide-title">Слайд номер {{ slideType }}</span>
+    </div>
+    <p class="step-description">
+        На этапе вводной лекции Вы узнаете какие зоны банка самые уязвимые, что включает в себя Система технических средств обеспечения безопасности банка и какие разновидности систем используются.
+    </p>
+</section>
+
+<ng-template #endCourse>
+    <section class="step">
+        <div class="step-slide">
+            <span class="step-slide-title">Курс успешно завершен</span>
+        </div>
+        <p class="step-description">
+            Выполняешь задания или проходишь образовательные курсы из раздела «активности» и мы начисляем тебе монеты Digital Ruble, которые можно конвертировать в товары из маркетплейса или подарить коллегам.
+        </p>
+    </section>
+    <button routerLink="/user/activity/course-list" class="step-button">Отправить на проверку</button>
+</ng-template>

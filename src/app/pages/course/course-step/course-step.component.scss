@@ -1,0 +1,31 @@
+.step {
+    width: 730px;
+    &-slide {
+        padding: 157px 165px;
+        background: #009FDF;
+        &-title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2F3441;
+    }
+    &-button {
+        background: linear-gradient(90deg, #0D70F2 0%, #009FDF 100%), #0D69F2;
+        border-radius: 8px;
+        padding: 10px 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: none;
+    }
+}

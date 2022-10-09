@@ -3,75 +3,70 @@
     <ol class="coursePath-list">
         <li>
             <div class="coursePath-step">
-                <a [routerLink]="['/']" routerLinkActive="router-link-active" class="coursePath-step-title">Вводная лекция «Система технических средств обеспечения
-      безопасности»</a
-    >
-    <div class="coursePath-step-info">
-      <div>
-        <span class="coursePath-step-info-price">+500</span>
-        <img src="assets/icons/coins.svg" alt="coins" />
+                <a [routerLink]="['step', 1]" routerLinkActive="router-link-active" class="coursePath-step-title">Вводная лекция «Система технических средств обеспечения
+          безопасности»</a
+        >
+        <div class="coursePath-step-info">
+          <div>
+            <span class="coursePath-step-info-price">+500</span>
+            <img src="assets/icons/coins.svg" alt="coins" />
+          </div>
+          <span class="coursePath-step-info-dot"></span>
+          <span class="coursePath-step-info-time">40 минут</span>
+        </div>
       </div>
-      <span class="coursePath-step-info-dot"></span>
-      <span class="coursePath-step-info-time">40 минут</span>
-    </div>
-  </div>
-</li>
-<li>
-  <div class="coursePath-step">
-    <a
-      [routerLink]="['/1']"
-      routerLinkActive="router-link-active"
-      class="coursePath-step-title"
-      >Вводная лекция «Система технических средств обеспечения
-      безопасности»</a
-    >
-    <div class="coursePath-step-info">
-      <div>
-        <span class="coursePath-step-info-price">+500</span>
-        <img src="assets/icons/coins.svg" alt="coins" />
+    </li>
+    <li>
+      <div class="coursePath-step">
+        <a
+          [routerLink]="['step', 2]"
+          routerLinkActive="router-link-active"
+          class="coursePath-step-title"
+          >Тест по вводной лекции
+        </a>
+                <div class="coursePath-step-info">
+                    <div>
+                        <span class="coursePath-step-info-price">+500</span>
+                        <img src="assets/icons/coins.svg" alt="coins" />
+                    </div>
+                    <span class="coursePath-step-info-dot"></span>
+                    <span class="coursePath-step-info-time">40 минут</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="coursePath-step">
+                <a [routerLink]="['step', 3]" [relativeTo]="" href="step" routerLinkActive="router-link-active" class="coursePath-step-title">Лекция «Денежно-кредитная политика и денежно-кредитное
+          регулирование.»</a
+        >
+        <div class="coursePath-step-info">
+          <div>
+            <span class="coursePath-step-info-price">+500</span>
+            <img src="assets/icons/coins.svg" alt="coins" />
+          </div>
+          <span class="coursePath-step-info-dot"></span>
+          <span class="coursePath-step-info-time">40 минут</span>
+        </div>
       </div>
-      <span class="coursePath-step-info-dot"></span>
-      <span class="coursePath-step-info-time">40 минут</span>
-    </div>
-  </div>
-</li>
-<li>
-  <div class="coursePath-step">
-    <a
-      [routerLink]="['/2']"
-      routerLinkActive="router-link-active"
-      class="coursePath-step-title"
-      >Вводная лекция «Система технических средств обеспечения
-      безопасности»</a
-    >
-    <div class="coursePath-step-info">
-      <div>
-        <span class="coursePath-step-info-price">+500</span>
-        <img src="assets/icons/coins.svg" alt="coins" />
+    </li>
+    <li>
+      <div class="coursePath-step">
+        <a
+          [routerLink]="['step', 4]"
+          routerLinkActive="router-link-active"
+          class="coursePath-step-title"
+          >Заключительный тест</a
+        >
+        <div class="coursePath-step-info">
+          <div>
+            <span class="coursePath-step-info-price">+500</span>
+            <img src="assets/icons/coins.svg" alt="coins" />
+          </div>
+          <span class="coursePath-step-info-dot"></span>
+          <span class="coursePath-step-info-time">40 минут</span>
+        </div>
       </div>
-      <span class="coursePath-step-info-dot"></span>
-      <span class="coursePath-step-info-time">40 минут</span>
-    </div>
-  </div>
-</li>
-<li>
-  <div class="coursePath-step">
-    <a
-      [routerLink]="['/3']"
-      routerLinkActive="router-link-active"
-      class="coursePath-step-title"
-      >Вводная лекция «Система технических средств обеспечения
-      безопасности»</a
-    >
-    <div class="coursePath-step-info">
-      <div>
-        <span class="coursePath-step-info-price">+500</span>
-        <img src="assets/icons/coins.svg" alt="coins" />
-      </div>
-      <span class="coursePath-step-info-dot"></span>
-      <span class="coursePath-step-info-time">40 минут</span>
-    </div>
-  </div>
-</li>
-</ol>
+    </li>
+  </ol>
+  <a [routerLink]="['step', 'end']" class="end">Завершить курс</a>
 </section>

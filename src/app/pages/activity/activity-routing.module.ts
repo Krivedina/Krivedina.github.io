@@ -13,7 +13,6 @@ const routes: Routes = [
         path: 'course-list',
         loadChildren: () => import('./../course/course.module').then(m => m.CourseModule)
       },
-
     ]
   }
 

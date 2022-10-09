@@ -1,37 +1,27 @@
 <section class="coursePage">
-  <img
-    class="coursePage-preview"
-    src="assets/icons/course-preview.png"
-    alt="course-preview"
-  />
-  <h2 class="coursePage-title">Безопасность кредитно-банковской системы</h2>
-  <div class="coursePage-info">
-    <img
-      src="assets/icons/course-creater-image.png"
-      alt="course-creater-image"
-      class="coursePage-info-avatar"
-    />
-    <div class="coursePage-info-name">
-      <span>Преподаватель</span>
-      <span>Ливанов И. М.</span>
+    <img class="coursePage-preview" src="assets/icons/course-preview.png" alt="course-preview" />
+    <h2 class="coursePage-title">Безопасность кредитно-банковской системы</h2>
+    <div class="coursePage-info">
+        <img src="assets/icons/course-creater-image.png" alt="course-creater-image" class="coursePage-info-avatar" />
+        <div class="coursePage-info-name">
+            <span>Преподаватель</span>
+            <span>Ливанов И. М.</span>
+        </div>
+        <div class="coursePage-info-time">
+            <ul>
+                <li>8 часов</li>
+                <li>Онлайн-формат</li>
+            </ul>
+        </div>
+        <div class="coursePage-info-bounty">
+            <span>Награда за прохождение </span>
+            <div class="coursePage-info-bounty-price">
+                <span>2500</span>
+                <img class="coursePage-info-bounty-image" src="assets/icons/coins.svg" alt="coins" />
+            </div>
+        </div>
     </div>
-    <div class="coursePage-info-time">
-      <ul>
-        <li>8 часов</li>
-        <li>Онлайн-формат</li>
-      </ul>
-    </div>
-    <div class="coursePage-info-bounty">
-      <span>Награда за прохождение </span>
-      <div class="coursePage-info-bounty-price">
-        <span>2500</span>
-        <img
-          class="coursePage-info-bounty-image"
-          src="assets/icons/coins.svg"
-          alt="coins"
-        />
-      </div>
-    </div>
-  </div>
-  <button class="coursePage-startButton">Начать курс</button>
+    <button [routerLink]="['../step', 1]" class="coursePage-startButton">
+    Начать курс
+  </button>
 </section>
