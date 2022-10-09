@@ -1,0 +1,77 @@
+.courseCard {
+    width: 255px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    &-image {
+        position: relative;
+        &-bounty {
+            position: absolute;
+            background: rgba(47, 52, 65, 0.24);
+            backdrop-filter: blur(4px);
+            border-radius: 8px;
+            left: 0px;
+            top: 0px;
+            padding: 10px 15px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 17px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        &-photo {
+            width: 255px;
+            height: 145px;
+        }
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2F3441;
+        margin: 0;
+    }
+    &-author {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        &-image {
+            width: 35px;
+            height: 35px;
+        }
+        &-name {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2F3441;
+        }
+    }
+    &-info {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2F3441;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-dot {
+            width: 2px;
+            height: 2px;
+            background: #2F3441;
+        }
+    }
+    &-inside {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0D69F2;
+        padding: 10px 30px;
+        background: #F3F7FA;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+}

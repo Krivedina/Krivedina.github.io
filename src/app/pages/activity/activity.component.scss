@@ -1,0 +1,13 @@
+:host {
+    padding: 30px 165px;
+    display: flex;
+}
+
+.activity {
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #C9C8D6;
+    }
+}
