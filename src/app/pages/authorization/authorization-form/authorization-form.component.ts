@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthorizationService } from 'src/app/services/authorization.service';
 
 @Component({
   selector: 'authorization-form',
@@ -17,9 +18,10 @@ export class AuthorizationFormComponent implements OnInit {
   }
   );
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private authorizationService: AuthorizationService) { }
 
   ngOnInit(): void {
+    this.authorizationService.postLogin().subscribe(console.log);
   }
 
 

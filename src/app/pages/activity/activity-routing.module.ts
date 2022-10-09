@@ -8,9 +8,16 @@ const routes: Routes = [
   {
     path: '',
     component: ActivityComponent,
+    children: [
+      {
+        path: 'course-list',
+        loadChildren: () => import('./../course/course.module').then(m => m.CourseModule)
+      },
+
+    ]
   }
 
-]
+];
 
 @NgModule({
   declarations: [],

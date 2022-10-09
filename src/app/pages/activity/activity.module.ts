@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivityComponent } from './activity.component';
 import { ActivityRoutingModule } from './activity-routing.module';
 import { CourseModule } from '../course/course.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,7 @@ import { CourseModule } from '../course/course.module';
   imports: [
     CommonModule,
     ActivityRoutingModule,
-    CourseModule
+    RouterModule,
   ]
 })
 export class ActivityModule { }

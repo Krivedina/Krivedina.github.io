@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'course-card',
@@ -8,9 +9,12 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class CourseCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goToCourse() {
+    this.router.navigate(['user/activity/course-list/course-page-1'])
+  }
 }
